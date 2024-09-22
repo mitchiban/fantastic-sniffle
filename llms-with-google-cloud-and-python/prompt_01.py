@@ -3,7 +3,7 @@ import vertexai
 from vertexai.language_models import ChatModel
 
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/mitch/Projects/proj_123_vertex_ai/llms-with-google-cloud-and-python/.env'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/mitch/Projects/proj_123_vertex_ai/fantastic-sniffle/llms-with-google-cloud-and-python/.env'
 
 
 vertexai.init(project="genai-prompt-w-pipeline")
@@ -27,4 +27,4 @@ chat.send_message("what is machine learning?")
 response = chat.send_message("what is machine learning?")
 
 
-print(response)  # This will print the generated response from the chat model
+print(response.text)  # This will print the generated response from the chat model
