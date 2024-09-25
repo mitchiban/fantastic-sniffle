@@ -21,7 +21,7 @@ model = ChatModel.from_pretrained(model_name)
 context = 'you are a math professer and explain topics in great detail'
 
 chat = model.start_chat(context=context)
-chat.send_message("what is machine learning?")
+#chat.send_message("what is machine learning?")
 
 response = chat.send_message("what is machine learning?")
 
